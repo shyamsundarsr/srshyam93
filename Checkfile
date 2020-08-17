@@ -1,0 +1,14 @@
+#!/bin/bash
+Files="/etc/group
+/etc/nsswitch.conf
+/etc/passwd
+/etc/timezone
+etc/random"
+
+for i in $Files
+do
+	if [ ! -e $i ]
+	then
+	echo $i do not exist
+	fi
+done
